@@ -6,17 +6,23 @@ public class Circulo_MO extends FiguraGeometrica_MO {
 	
 	public Circulo_MO(double r, String tipoFigura) {
 		super(tipoFigura);
+		
 		radio = r;
+		radio = radio*-1;
 	}
+	
+	
 
 	@Override
 	public double area() {
+		
 		return radio * radio * PI;
 
 	}
 	
 	@Override
 	public double perimetro() {
+		
 		return radio * 2 * PI;
 	}
 
